@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APPConsumerUTNMaui.MainPage">
+
+    <ScrollView>
+        <StackLayout Spacing="20" Padding="20">
+            <!-- Sección de Clasificaciones -->
+            <Frame CornerRadius="15" Padding="15" Margin="10" BackgroundColor="#e8eaf6">
+                <!-- Fondo claro azul -->
+                <StackLayout>
+                    <Label Text="Clasificaciones" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#1a237e"/>
+                    <!-- Texto azul oscuro -->
+
+                    <Label Text="Id clasificación:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtId" Placeholder="Ingrese ID"/>
+
+                    <Label Text="Clasificación:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtClasificacion" Placeholder="Ingrese clasificación"/>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
+                        <Button x:Name="cmdCreate" Text="INSERTAR" Clicked="cmdCreate_Clicked"/>
+                        <Button x:Name="cmdRead" Text="LEER" Clicked="cmdRead_Clicked"/>
+                        <Button x:Name="cmdUpdate" Text="ACTUALIZAR" Clicked="cmdUpdate_Clicked"/>
+                        <Button x:Name="cmdDelete" Text="BORRAR" Clicked="cmdDelete_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Sección de Productos -->
+            <Frame CornerRadius="15" Padding="15" Margin="10" BackgroundColor="#e8eaf6">
+                <!-- Fondo claro azul -->
+                <StackLayout>
+                    <Label Text="Productos" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="Center" TextColor="#1a237e"/>
+                    <!-- Texto azul oscuro -->
+
+                    <Label Text="Id producto:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtIdProducto" Placeholder="Ingrese ID del producto"/>
+
+                    <Label Text="Nombre producto:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtNombreProducto" Placeholder="Ingrese nombre del producto"/>
+
+                    <Label Text="Existencia:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtExistencia" Placeholder="Cantidad en existencia"/>
+
+                    <Label Text="Precio unitario:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtPrecioUnitario" Placeholder="Precio unitario"/>
+
+                    <Label Text="IVA:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtIVA" Placeholder="Impuesto sobre el valor añadido"/>
+
+                    <Label Text="ID Clasificación:" FontSize="Small" TextColor="#1a237e"/>
+                    <Entry x:Name="txtClasificacionId" Placeholder="ID de clasificación asociado"/>
+
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="10">
+                        <Button x:Name="cmdCreateProd" Text="INSERTAR" Clicked="cmdCreateProd_Clicked"/>
+                        <Button x:Name="cmdReadProd" Text="LEER" Clicked="cmdReadProd_Clicked"/>
+                        <Button x:Name="cmdUpdateProd" Text="ACTUALIZAR" Clicked="cmdUpdateProd_Clicked"/>
+                        <Button x:Name="cmdDeleteProd" Text="BORRAR" Clicked="cmdDeleteProd_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
